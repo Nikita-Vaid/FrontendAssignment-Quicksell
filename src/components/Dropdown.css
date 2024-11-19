@@ -1,0 +1,32 @@
+.dropdown {
+    display: flex;
+    flex-direction: "row";
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+  
+  .dropdown label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dropdown select {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dropdown select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
