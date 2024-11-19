@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Use React JS for the Assignment**
 
-## Available Scripts
+**Design:** 
 
-In the project directory, you can run:
+**Display state:** 
 
-### `npm start`
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1a13657-9dc2-496d-a5c7-b27be15e9fe0/Untitled.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**State based on display. - Grouping by user is selected.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/de6f9ade-433a-4185-a6df-4d396ea8be2d/Untitled.png)
 
-### `npm test`
+**Grouping by priority is selected.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2f8e52ba-2b96-40e8-be6a-34e25dd240eb/Untitled.png)
 
-### `npm run build`
+**Card:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/896834d4-fe3d-4db5-bd76-29049439b0cb/Untitled.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Api** :  https://api.quicksell.co/v1/internal/frontend-assignment 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You are required to create an interactive Kanban board application using React JS that interacts with the provided API from  https://api.quicksell.co/v1/internal/frontend-assignment
 
-### `npm run eject`
+When a user clicks the "display" button and selects a grouping option, the Kanban board should dynamically adjust to reflect the user's choice.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application should offer three distinct ways to group the data:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **By Status**: Group tickets based on their current status.
+2. **By User**: Arrange tickets according to the assigned user.
+3. **By Priority**: Group tickets based on their priority level.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Users should also be able to sort the displayed tickets in two ways:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Priority**: Arrange tickets in descending order of priority.
+2. **Title**: Sort tickets in ascending order based on their title.
 
-## Learn More
+The Kanban board should be responsive and visually appealing, with a design similar to the provided screenshots. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**The priority levels for the tickets are as follows:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Urgent (Priority level 4)
+- High (Priority level 3)
+- Medium (Priority level 2)
+- Low (Priority level 1)
+- No priority (Priority level 0)
 
-### Code Splitting
+**Priority levels: (This values you will receive in the api)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4 - Urgent
 
-### Analyzing the Bundle Size
+3 - High
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2 - Medium
 
-### Making a Progressive Web App
+1 - Low
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+0 - No priority
 
-### Advanced Configuration
+Additionally, the application should save the user's view state even after page reload.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Assets**
 
-### Deployment
+[Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/867c6222-5e73-49fb-b21f-a276ba2d258b/76bcb3fe-d025-4ad4-9247-e38c2935b859/Untitled.zip)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Note:** 
 
-### `npm run build` fails to minify
+1. Don’t use css library like Bootstrap, Tailwind, Vite, Material UI, Charka…etc
+2. Don’t use NextJs or similar framework. Code in pure ReactJS
+3. Write Pure CSS Code only. No library for css (bootstrap,..etc). Styled JSX can be used though
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Evaluation Criteria**
+
+Your work will be evaluated based on the following criteria:
+
+> UI Should Look exactly same as screenshot.
+> 
+1. **Functionality**: The application should effectively fetch data from the provided API and allow users to group and sort tickets based on the given options.
+2. **Visual Design**: The UI should match the provided design, including the layout, card design, and overall aesthetics.
+3. **Business Logic Optimisation**
+4. **Component Structuring**: Components should be appropriately structured, promoting reusability and maintainability.
